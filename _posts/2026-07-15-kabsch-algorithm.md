@@ -6,7 +6,8 @@ tags: ["Kabsch", "SVD", "정렬"]
 description: "두 3차원 점 데이터의 거리제곱오차를 최소화하는 회전 R과 이동 T를 구하는 Kabsch 알고리즘을 정리한다."
 math: true
 ---
-그림1. 적절한 R과 T를 통해 두 데이터를 정렬
+![Kabsch 알고리즘: 두 3차원 데이터를 정렬하자 그림 1](/assets/img/posts/kabsch-algorithm/image_01.gif)
+_그림1. 적절한 R과 T를 통해 두 데이터를 정렬_
 
 두 데이터셋이 비슷하게 생겼다면 누구든 두 데이터셋을 한번 겹쳐보고 싶을것이다.
 

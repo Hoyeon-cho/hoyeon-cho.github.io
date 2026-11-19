@@ -27,6 +27,8 @@ $$
 
 ## 2.1 증명: $n = 2$인 경우
 
+![젠센(옌센) 부등식 그림 1](/assets/img/posts/jensen-inequality/image_01.png)
+
 두 점에 대한 젠센 부등식은 볼록 함수(Convex Function)의 수학적 정의 그 자체이다.
 
 $$
