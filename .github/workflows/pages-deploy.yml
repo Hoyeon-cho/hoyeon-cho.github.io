@@ -31,9 +31,15 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
-          submodules: true
-          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
-          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
+
+      # Self-hosted CSS/JS libraries (assets.self_host in _config.yml), so the blog
+      # does not depend on cdn.jsdelivr.net. Pinned to a fixed commit.
+      - name: Fetch static assets
+        run: |
+          git init -q assets/lib
+          git -C assets/lib fetch -q --depth 1 https://github.com/cotes2020/chirpy-static-assets 5cde3f0076b62e45fc68291893cf7d93e122adb7
+          git -C assets/lib checkout -q FETCH_HEAD
+          rm -rf assets/lib/.git
 
       - name: Setup Pages
         id: pages
